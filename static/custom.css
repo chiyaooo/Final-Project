@@ -1,0 +1,79 @@
+body{
+  font-family: 'Cardo', serif;
+  color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Oswald', sans-serif;
+ text-transform: uppercase;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: #182628;
+    background-color: white;
+    background-image: url('../static/images/COVIDcartoon.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.btn-primary{
+    background-color: #65CCB8;
+    color: #F2F2F2;
+    border-color: #3B945E;
+}
+
+.btn-secondary{
+    background-color: #F2F2F2;
+    color: #F2F2F2;
+    border-color: #3B945E;
+}
+
+
+.navbar-expand-lg{
+    background-color: #65CCB8;
+    color: #F2F2F2;
+}
+
+.navbar-expand-sm{
+    background-color: #57BA98;
+    color: #F2F2F2;
+}
+
+.nav-link{
+    color: #182628;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar-brand{
+    color: #182628;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar-nav a{
+  color: #182628;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-fnt {
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.navbar-light {
+color: #182628;}
+
+.btn-info {
+  color: #182628;
+}
+
+.btn-primary:hover{
+    background-color: #57BA98;
+    color: black;
+    border-color: #3B945E;
+}

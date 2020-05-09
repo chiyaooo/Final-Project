@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+{% if cases %}
+    <table class="table table-striped table-hover table-sm text-center" id="totalCases">
+        <thead>
+            <tr>
+                <th>Location</th>
+                <th>Total Cases</th>
+                <th>Total Recovered</th>
+                <th>Total Deaths</th>
+                <th>Fatality</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for row in cases %}
+            <tr>
+
+                <td> {{ row.location }}</td>
+                <td> {{ row.totalCases }}</td>
+                <td> {{ row.totalRecovered }}</td>
+                <td> {{ row.totalDeaths }}</td>
+                <td> {{ row.fatality }}</td>
+                <td> {{ row.date }}</td>
+
+
+                <td>
+
+        </td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+<p id="demo"></p>
+
+
+{% endblock %}

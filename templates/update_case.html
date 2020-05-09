@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container-fluid">
+
+  <h3>{{ legend }}</h3>
+
+  <form method="POST" action="">
+
+    {{ form.csrf_token }}
+    <table>
+      <tr>
+        <td>{{ form.states.label }}</td>
+        <td>{{ form.states(size=20) }}</td>
+      </tr>
+      <tr>
+        <td>{{ form.cases.label }}</td>
+        <td>{{ form.cases(size=20) }}</td>
+      </tr>
+      <tr>
+        <td>{{ form.recovered.label }}</td>
+        <td>{{ form.recovered(size=20) }}</td>
+      </tr>
+      <tr>
+        <td>{{ form.deaths.label }} </td>
+        <td> {{ form.deaths(size=20) }}</td>
+      </tr>
+      <tr>
+        <td>{{ form.fatality.label }}</td>
+        <td> {{ form.fatality(size=20) }}</td>
+      </tr>
+
+    </table>
+
+
+    <input type="submit" value="Save" class="btn btn-info">
+
+  </form>
+
+</div>
+{% endblock %}
