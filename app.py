@@ -10,7 +10,7 @@ from flask_login import LoginManager, UserMixin, current_user, login_user, logou
 from functools import wraps
 from sqlalchemy import or_
 import pymysql
-import secrets
+#import secrets
 import datetime
 from datetime import date, timedelta
 import os
